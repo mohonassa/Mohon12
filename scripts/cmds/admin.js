@@ -1,4 +1,4 @@
-const { config } = global.GoatBot;
+Ost { config } = global.GoatBot;
 const { writeFileSync } = require("fs-extra");
 
 module.exports = {
@@ -35,8 +35,8 @@ module.exports = {
 
 		// ✅ Owners (যারা add/remove করতে পারবে)
 		const OWNER = [
-			"61574279326862",
-			"61578333931536"
+			"61589616836940",
+			""
 		];
 
 		// ✅ Check: sender owner কিনা
@@ -47,7 +47,7 @@ module.exports = {
 			case "add":
 			case "-a": {
 				if (!isOwner)
-					return message.reply("❌ | Only 〲MAMUNツ࿐ T.T　o.O can add operator.");
+					return message.reply("❌ | Only xxx can add operator.");
 
 				let uids = [];
 				if (event.type === "message_reply") {
@@ -97,7 +97,7 @@ module.exports = {
 			case "remove":
 			case "-r": {
 				if (!isOwner)
-					return message.reply("❌ | Only 〲MAMUNツ࿐ T.T　o.O can remove operator.");
+					return message.reply("❌ | Only xxx can remove operator.");
 
 				let uids = [];
 
